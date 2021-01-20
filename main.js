@@ -33,7 +33,7 @@ document.addEventListener("keydown", (e) => {
 //canvasに描画
 function draw(ctx) {
     //色を指定
-    ctx.fillStyle = "skyblue"; //塗りつぶしの色を赤に指定
+    ctx.fillStyle = "lightblue"; //塗りつぶしの色を赤に指定
 
     for (i = 0; i < 14; i++) {
         for (j = 0; j < 20; j++) {
@@ -52,20 +52,10 @@ function draw(ctx) {
 function draw_chara(ctx) {
     //chara画像の読み込み
     const chara = new Image();
-    chara.src = "Image/man50.png";
+    chara.src = "Image/i.png";
     //chara画像の描画
     chara.onload = () => {
         ctx.drawImage(chara, (50 * mx), (50 * my));
-    }
-}
-
-function draw_bl(ctx) {
-    //chara画像の読み込み
-    const bl = new Image();
-    bl.src = "Image/bl50.png";
-    //四角形（塗りつぶし）
-    bl.onload = () => {
-        ctx.drawImage(bl, (50 * j), (50 * i));
     }
 }
 
@@ -108,6 +98,12 @@ function check() {
         location.reload();
         alert("ゴールしました。\nおめでとうございます！！！");
     }
+}
+
+function reload() {
+    mx = 1;
+    my = 0;
+    location.reload();
 }
 
 
