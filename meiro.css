@@ -1,0 +1,22 @@
+h1 {
+    color: rgb(87, 62, 62);
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', sans-serif;
+}
+
+p {
+    text-align: center;
+    border: dashed 2px rgb(87, 62, 62);
+    padding: 10px;
+}
+
+body {
+    width: 100%;
+}
+
+#canvas_wrapper {
+    width: 1000px;
+    margin: auto;
+}
